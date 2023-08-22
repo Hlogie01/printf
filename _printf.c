@@ -6,9 +6,8 @@ void print_buffer(char buffer[], int *buff_ind);
  * _printf - Printf function
  * @format: format
  * Return: Printed characters
- * 
- */
-int _printf(const char *f, ...)
+ */ 
+int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
@@ -54,13 +53,13 @@ int _printf(const char *f, ...)
 }
 
 /**
- * print_buffer - Prints contents of buffer if it exist
- * @buffer: Array of characters
- * @buff_ind: Index which represents length, when you add next character
+ * print_buffer - Prints contents of the buffer when it exist
+ * @buffer: Array of chars
+ * @buff_ind: Index which represents the length whem you add the next char
  */
-void print_buffer(char buffer [], int *buff_ind)
+void print_buffer(char buffer[], int *buff_ind)
 {
-	if (*buff_ind >0)
+	if (*buff_ind > 0)
 		write(1, &buffer[0], *buff_ind);
 
 	*buff_ind = 0;
