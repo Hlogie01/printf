@@ -2,8 +2,8 @@
 
 /****************** PRINT POINTER ******************/
 /**
- * print_pointer - Prints the value a pointer variable
- * @types: List of arguments
+ * print_pointer - Prints the value of a pointer variable
+ * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
@@ -97,8 +97,8 @@ int print_non_printable(va_list types, char buffer[],
  * print_reverse - Prints reverse string.
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculate flags
- * @width: get width size
+ * @flags:  Calculates active flags
+ * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Numbers of chars printed
@@ -140,8 +140,8 @@ int print_reverse(va_list types, char buffer[],
  * print_rot13string - Print a string in rot13.
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculate  flags
- * @width: get width size
+ * @flags:  Calculates active flags
+ * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Numbers of chars printed
